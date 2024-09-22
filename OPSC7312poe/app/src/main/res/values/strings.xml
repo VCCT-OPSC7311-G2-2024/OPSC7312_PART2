@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">OPSC7312 poe</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">click_to_login</string>
+    <string name="click_to_register" />
+    <string name="logout" />
 </resources>
