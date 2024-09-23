@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseAuth
 
 class Register : AppCompatActivity() {
 
+    private lateinit var editTextFirstName: TextInputEditText
+    private lateinit var editTextLastName: TextInputEditText
     private lateinit var editTextEmail: TextInputEditText
     private lateinit var editTextPassword: TextInputEditText
     private lateinit var buttonReg: Button
@@ -42,6 +44,8 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         // Initialize the views
+        editTextFirstName = findViewById(R.id.first_name)
+        editTextLastName = findViewById(R.id.last_name)
         progressBar = findViewById(R.id.progressBar)
         mAuth = FirebaseAuth.getInstance()
         editTextEmail = findViewById(R.id.email)
@@ -67,6 +71,19 @@ class Register : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE;
             val email = editTextEmail.text.toString()
             val password = editTextPassword.text.toString()
+            val firstName = editTextFirstName.text.toString()
+            val lastName = editTextLastName.text.toString()
+
+            if (TextUtils.isEmpty(firstName)) {
+                Toast.makeText(this, "Enter first name", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (TextUtils.isEmpty(lastName)) {
+                Toast.makeText(this, "Enter last name", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
 
             if (TextUtils.isEmpty(email)) {
                 Toast.makeText(this, "Enter email", Toast.LENGTH_SHORT).show()
