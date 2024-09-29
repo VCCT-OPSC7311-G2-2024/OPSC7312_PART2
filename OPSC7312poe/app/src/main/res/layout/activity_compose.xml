@@ -1,0 +1,90 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        android:textColor="#5DB075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/composeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Compose"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+    <!-- Date -->
+
+    <!-- Body EditText -->
+
+    <TextView
+        android:id="@+id/composeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="16dp"
+        android:text="21 July 2024"
+        android:textColor="#5DB075"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/composeTitle" />
+
+    <EditText
+        android:id="@+id/journalBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:gravity="top|start"
+        android:hint="Text here..."
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/saveEntryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/composeDate" />
+
+    <!-- Mood Icon -->
+
+    <!-- Save Button -->
+
+    <ImageView
+        android:id="@+id/moodIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="-73dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/composeDate" />
+
+    <Button
+        android:id="@+id/saveEntryButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#5DB075"
+        android:text="Done"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

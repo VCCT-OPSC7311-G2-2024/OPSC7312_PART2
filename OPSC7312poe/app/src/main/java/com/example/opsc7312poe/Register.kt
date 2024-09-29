@@ -25,7 +25,7 @@ class Register : AppCompatActivity() {
     private lateinit var buttonReg: Button
     private lateinit var mAuth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
-    lateinit var textView: TextView
+    private lateinit var textView: TextView
 
     public override fun onStart() {
         super.onStart()
@@ -68,7 +68,7 @@ class Register : AppCompatActivity() {
 
         // Set button click listener
         buttonReg.setOnClickListener {
-            progressBar.visibility = View.VISIBLE;
+            progressBar.visibility = View.VISIBLE
             val email = editTextEmail.text.toString()
             val password = editTextPassword.text.toString()
             val firstName = editTextFirstName.text.toString()
@@ -95,13 +95,23 @@ class Register : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (TextUtils.isEmpty(firstName)) {
+                Toast.makeText(this, "Enter first name", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (TextUtils.isEmpty(lastName)) {
+                Toast.makeText(this, "Enter last name", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             //registration logic
             mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     progressBar.visibility = View.GONE
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
-                        val user = mAuth.currentUser
+                        mAuth.currentUser
 
                         Toast.makeText(
                             baseContext,

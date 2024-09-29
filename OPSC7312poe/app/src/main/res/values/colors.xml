@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#5DB075</color>
+    <color name="purple_500">#6200EE</color> <!-- Example color value -->
+    <color name="awful">#FF0000</color> <!-- Red for awful -->
+    <color name="bad">#FFA500</color>   <!-- Orange for bad -->
+    <color name="neutral">#FFFF00</color> <!-- Yellow for neutral -->
+    <color name="good">#008000</color>   <!-- Green for good -->
+    <color name="rad">#0000FF</color>    <!-- Blue for rad -->
 </resources>

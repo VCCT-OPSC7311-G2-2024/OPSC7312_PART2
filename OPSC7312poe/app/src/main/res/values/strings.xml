@@ -16,4 +16,10 @@
     <string name="awful">Awful</string>
     <string name="first_name">First Name</string>
     <string name="last_name">last Name</string>
+    <string-array name="time_frame_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
 </resources>

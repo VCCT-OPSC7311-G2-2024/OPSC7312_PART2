@@ -1,0 +1,169 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EditProfileActivity">
+
+    <!-- Toolbar with settings, profile title, and logout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Settings TextView -->
+        <TextView
+            android:id="@+id/settingsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingStart="16dp"
+            android:text="Settings"
+            android:textColor="@color/white" />
+
+        <!-- Centered Profile Title -->
+        <TextView
+            android:id="@+id/profileTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Logout TextView -->
+        <TextView
+            android:id="@+id/logoutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingEnd="16dp"
+            android:text="Logout"
+            android:textColor="@color/white" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_shape"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_profile_image_placeholder"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Edit Icon Overlay on Profile Image -->
+    <ImageView
+        android:id="@+id/editProfileImageIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Edit Profile Image"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintEnd_toEndOf="@id/profileImageView"
+        app:layout_constraintTop_toTopOf="@id/profileImageView" />
+
+    <!-- User Name TextView -->
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Victoria Robertson"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView" />
+
+    <!-- First Name Input Field -->
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Last Name Input Field -->
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editFirstName"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editLastName"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <!-- Save Profile Button -->
+    <Button
+        android:id="@+id/saveProfileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="@color/green"
+        android:text="Save Profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editPassword"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
