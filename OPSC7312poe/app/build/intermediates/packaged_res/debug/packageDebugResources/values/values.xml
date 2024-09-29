@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="time_frame_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <color name="awful">#FF0000</color>
+    <color name="bad">#FFA500</color>
     <color name="black">#FF000000</color>
+    <color name="good">#008000</color>
+    <color name="green">#5DB075</color>
+    <color name="neutral">#FFFF00</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="rad">#0000FF</color>
     <color name="white">#FFFFFFFF</color>
     <string name="MoodPromps">How are you feeling today?</string>
     <string name="Rad">Rad</string>

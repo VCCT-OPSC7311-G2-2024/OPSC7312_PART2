@@ -1,9 +1,11 @@
 package com.example.opsc7312poe
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.ImageButton
 import android.widget.ProgressBar
 import android.widget.Spinner
 import android.widget.Toast
@@ -39,8 +41,8 @@ class MoodTrack : AppCompatActivity() {
 
         // Initialize UI components
         moodChart = findViewById(R.id.barchart)
-        timeFrameSpinner = findViewById(R.id.time_frame_spinner)
         loadingIndicator = findViewById(R.id.loading_indicator)
+        timeFrameSpinner = findViewById(R.id.time_frame_spinner) // Initialize your Spinner here
 
         // Adjust padding for system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -58,7 +60,7 @@ class MoodTrack : AppCompatActivity() {
         }
 
         val userId = user!!.uid
-        val database = FirebaseDatabase.getInstance()
+        val database = FirebaseDatabase.getInstance("https://opsc7311poe-fd06a-default-rtdb.europe-west1.firebasedatabase.app")
         userMoodsRef = database.getReference("users").child(userId).child("moods")
 
         // Set up spinner adapter and listener
@@ -81,7 +83,23 @@ class MoodTrack : AppCompatActivity() {
 
         // Load mood data for the initial selection
         getMoodsForTimeFrame(getLast12Days(), showWeekly = false)
+
+        // Navigation buttons
+        val navHome: ImageButton = findViewById(R.id.nav_home)
+        navHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            finish() // Optional: Call finish() if you want to remove the current activity from the back stack
+        }
+
+        val navMood: ImageButton = findViewById(R.id.nav_mood)
+        navMood.setOnClickListener {
+            val intent = Intent(this, MoodTrack::class.java)
+            startActivity(intent)
+        }
     }
+
 
     private fun getMoodsForTimeFrame(dates: List<String>, showWeekly: Boolean) {
         loadingIndicator.visibility = View.VISIBLE
@@ -173,71 +191,48 @@ class MoodTrack : AppCompatActivity() {
 
         // Right Y-axis settings (mirrored with the left Y-axis)
         moodChart.axisRight.apply {
-            isEnabled = true
-            setDrawGridLines(true)
-            axisMinimum = 0f
-            axisMaximum = 5f
-            labelCount = 5
-            granularity = 1f // Ensure grid lines are drawn at each integer value
+            isEnabled = false // Disable right Y-axis
         }
 
-        // Configure X-axis
+        // X-axis configuration
         moodChart.xAxis.apply {
-            isEnabled = true
-            setDrawGridLines(false)
             position = XAxis.XAxisPosition.BOTTOM
-            labelCount = lastDays.size // Set to match the number of days displayed
-            granularity = 1f // Ensure each label corresponds to one day
+            granularity = 1f // Ensure steps of 1 day
+            setDrawGridLines(false)
         }
 
+        moodChart.description.isEnabled = false // Disable the description label
         moodChart.invalidate() // Refresh the chart
     }
 
-    inner class DayAxisValueFormatter(private val days: List<String>) : ValueFormatter() {
+    class DayAxisValueFormatter(private val dates: List<String>) : ValueFormatter() {
         override fun getAxisLabel(value: Float, axis: AxisBase?): String {
-            val index = value.toInt()
-            return if (index in days.indices) {
-                val date = SimpleDateFormat("EEE", Locale.getDefault()).format(
-                    SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(days[index])!!
-                )
-                date.first().uppercase() // Return the first letter of the day (e.g., "M", "T", "W", ...)"
-            } else {
-                ""
-            }
+            return dates.getOrNull(value.toInt()) ?: ""
         }
     }
 
-    inner class WeeklyAxisValueFormatter(private val days: List<String>) : ValueFormatter() {
+    class WeeklyAxisValueFormatter(private val dates: List<String>) : ValueFormatter() {
         override fun getAxisLabel(value: Float, axis: AxisBase?): String {
-            val index = value.toInt()
-            return if (index in days.indices) {
-                val startDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).parse(days[index])!!
-                val calendar = Calendar.getInstance().apply { time = startDate }
-                calendar.set(Calendar.DAY_OF_WEEK, calendar.firstDayOfWeek) // Set to the first day of the week
-                SimpleDateFormat("MM/dd", Locale.getDefault()).format(calendar.time) // Return the formatted date
-            } else {
-                ""
-            }
+            return if (value < dates.size) "Week $value" else "Avg"
         }
     }
 
-    // Mood class to represent mood values
     enum class Mood(val value: Int) {
-        AWFUL(1),
-        BAD(2),
-        NEUTRAL(3),
+        RAD(5),
         GOOD(4),
-        RAD(5);
+        MEH(3),
+        BAD(2),
+        AWFUL(1);
 
         companion object {
-            fun fromString(moodString: String): Mood {
-                return when (moodString.lowercase(Locale.getDefault())) {
-                    "awful" -> AWFUL
-                    "bad" -> BAD
-                    "neutral" -> NEUTRAL
-                    "good" -> GOOD
+            fun fromString(mood: String): Mood {
+                return when (mood.lowercase()) {
                     "rad" -> RAD
-                    else -> NEUTRAL // Default to neutral
+                    "good" -> GOOD
+                    "meh" -> MEH
+                    "bad" -> BAD
+                    "awful" -> AWFUL
+                    else -> MEH // Default to neutral mood if unknown
                 }
             }
         }

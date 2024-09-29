@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array time_frame_options
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -1363,10 +1364,12 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color awful
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bad
 color black
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1443,6 +1446,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color good
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -2099,6 +2104,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
+color neutral
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -2109,6 +2115,8 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple_500
+color rad
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3008,6 +3016,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable audio
 drawable avd_hide_password
 drawable avd_show_password
 drawable awful
@@ -3020,6 +3029,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_shape
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -3047,6 +3057,7 @@ drawable design_snackbar_background
 drawable good
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable home
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3056,6 +3067,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_edit
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3066,11 +3078,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_other_sign_in
-drawable ic_passkey
-drawable ic_password
+drawable ic_profile_image_placeholder
 drawable ic_search_black_24
 drawable indeterminate_static
+drawable journal
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3093,6 +3104,7 @@ drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable meh
+drawable mood
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3144,6 +3156,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable profile
 drawable rad
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3196,6 +3209,7 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
+id accountLabel
 id actionDown
 id actionDownUp
 id actionUp
@@ -3238,7 +3252,9 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id awful
+id backButton
 id bad
+id barchart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3256,8 +3272,8 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_Login
-id btn_register
 id buttonPanel
+id buttonRegister
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3280,6 +3296,8 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id composeDate
+id composeTitle
 id compress
 id confirm_button
 id constraint
@@ -3331,6 +3349,17 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editEmail
+id editFirstName
+id editLastName
+id editPassword
+id editProfileButton
+id editProfileImageIcon
+id editTextConfirmPassword
+id editTextEmail
+id editTextName
+id editTextPassword
+id editTextSurname
 id edit_query
 id edit_text_id
 id elastic
@@ -3340,6 +3369,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id entryTitle
 id escape
 id exitUntilCollapsed
 id expand_activities_button
@@ -3349,7 +3379,6 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
-id first_name
 id fitCenter
 id fitEnd
 id fitStart
@@ -3359,6 +3388,7 @@ id fixed
 id flip
 id floating
 id forever
+id forgotPassword
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3372,6 +3402,7 @@ id group_divider
 id grouping
 id groups
 id header_title
+id helpSupportButton
 id hide_ime_id
 id hideable
 id home
@@ -3385,6 +3416,15 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id image_awful
+id image_bad
+id image_blankSpace2
+id image_blankSpace3
+id image_blankSpace4
+id image_blankSpace5
+id image_good
+id image_meh
+id image_rad
 id immediateStop
 id included
 id indeterminate
@@ -3393,10 +3433,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id journalBody
 id jumpToEnd
 id jumpToStart
 id labeled
-id last_name
 id layout
 id left
 id leftToRight
@@ -3407,7 +3447,10 @@ id line3
 id linear
 id listMode
 id list_item
-id loginNow
+id loading_indicator
+id loginSSO
+id logoutButton
+id logoutTextView
 id m3_side_sheet
 id main
 id marquee
@@ -3445,6 +3488,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id moodIcon
 id mood_grid
 id mood_prompt
 id motion_base
@@ -3472,6 +3516,12 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_audio
+id nav_home
+id nav_journal
+id nav_mood
+id nav_profile
+id navigation_bar
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3490,6 +3540,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notificationsButton
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3522,10 +3573,14 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id piechart
 id pin
 id position
 id postLayout
 id pressed
+id privacyButton
+id profileImageView
+id profileTitleTextView
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -3534,6 +3589,7 @@ id radio
 id ratio
 id rectangles
 id registerNow
+id relativeLayout
 id report_drawn
 id reverseSawtooth
 id right
@@ -3542,6 +3598,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saveEntryButton
+id saveProfileButton
 id save_mood
 id save_non_transition_alpha
 id save_overlay_view
@@ -3563,9 +3621,12 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id securityButton
 id select_dialog_listview
 id selected
 id selection_type
+id settingsButton
+id settingsTextView
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3603,6 +3664,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id supportLabel
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3618,6 +3680,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id termsPoliciesButton
 id text
 id text2
 id textEnd
@@ -3625,6 +3688,8 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewLogin
+id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3635,10 +3700,12 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id time_frame_spinner
 id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3658,6 +3725,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userName
+id userNameTextView
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3792,8 +3861,12 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_account
+layout activity_compose
+layout activity_edit_profile
 layout activity_login
 layout activity_main
+layout activity_mood_track
 layout activity_register
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3815,6 +3888,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout journal_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3909,8 +3983,6 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string android_credentials_TYPE_PASSWORD_CREDENTIAL
-string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4645,7 +4717,6 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
-style Theme_Hidden
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog

@@ -8,9 +8,10 @@
         android:minSdkVersion="27"
         android:targetSdkVersion="34" />
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <permission
         android:name="com.example.opsc7312poe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -31,17 +32,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Material3.Light" >
-        <activity
-            android:name="com.example.opsc7312poe.Mood"
-            android:exported="false" />
-        <activity
-            android:name="com.example.opsc7312poe.Register"
-            android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
-        <activity
-            android:name="com.example.opsc7312poe.Login"
-            android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+
+        <!-- Main Activity -->
         <activity
             android:name="com.example.opsc7312poe.MainActivity"
             android:exported="true" >
@@ -51,6 +43,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- User Authentication Activities -->
+        <activity
+            android:name="com.example.opsc7312poe.Login"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name="com.example.opsc7312poe.Register"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+
+        <!-- Mood Tracking Activity -->
+        <activity
+            android:name="com.example.opsc7312poe.MoodTrack"
+            android:exported="false" />
+
+        <!-- New Activities -->
+        <activity
+            android:name="com.example.opsc7312poe.ComposeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name="com.example.opsc7312poe.AccountActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
+        <activity
+            android:name="com.example.opsc7312poe.EditProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
         <activity
             android:name="com.google.firebase.auth.internal.GenericIdpActivity"
             android:excludeFromRecents="true"
@@ -96,43 +117,9 @@
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
-        <service
-            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-            android:enabled="true"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-        </service>
-
-        <activity
-            android:name="androidx.credentials.playservices.HiddenActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:enabled="true"
-            android:exported="false"
-            android:fitsSystemWindows="true"
-            android:theme="@style/Theme.Hidden" >
-        </activity>
-        <activity
-            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <!--
-            Service handling Google Sign-In user revocation. For apps that do not integrate with
-            Google Sign-In, this service will never be started.
-        -->
-        <service
-            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-            android:exported="true"
-            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-            android:visibleToInstantApps="true" />
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"

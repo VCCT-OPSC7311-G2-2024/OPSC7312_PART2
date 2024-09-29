@@ -76,23 +76,17 @@
         android:id="@+id/save_mood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
         android:text="Save Mood"
         android:layout_gravity="center"
         android:layout_marginTop="16dp" />
 
-    <!-- Logout Button -->
-    <Button
-        android:id="@+id/logout_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+
 
     <!-- Spacer to push navbar to the bottom -->
     <View
         android:layout_width="match_parent"
-        android:layout_height="270dp"
+        android:layout_height="298dp"
         android:layout_weight="1" />
 
     <View
@@ -130,6 +124,16 @@
             android:padding="8dp"
             android:scaleType="centerInside"
             android:src="@drawable/audio" />
+
+        <ImageButton
+            android:id="@+id/nav_mood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mood" />
 
         <!-- Journal Icon -->
         <ImageButton

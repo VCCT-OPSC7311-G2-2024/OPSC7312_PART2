@@ -15,19 +15,19 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 
-
 class Register : AppCompatActivity() {
 
-    private lateinit var editTextFirstName: TextInputEditText
-    private lateinit var editTextLastName: TextInputEditText
-    private lateinit var editTextEmail: TextInputEditText
-    private lateinit var editTextPassword: TextInputEditText
-    private lateinit var buttonReg: Button
+    private lateinit var nameEditText: TextInputEditText
+    private lateinit var surnameEditText: TextInputEditText
+    private lateinit var emailEditText: TextInputEditText
+    private lateinit var passwordEditText: TextInputEditText
+    private lateinit var confirmPasswordEditText: TextInputEditText
+    private lateinit var registerButton: Button
     private lateinit var mAuth: FirebaseAuth
     private lateinit var progressBar: ProgressBar
-    private lateinit var textView: TextView
+    private lateinit var loginTextView: TextView
 
-    public override fun onStart() {
+    override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = mAuth.currentUser
@@ -41,23 +41,25 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_register) // Ensure this matches your layout file
 
-        // Initialize the views
-        editTextFirstName = findViewById(R.id.first_name)
-        editTextLastName = findViewById(R.id.last_name)
+        // Initialize the views with matching IDs from the layout
+        nameEditText = findViewById(R.id.editTextName)
+        surnameEditText = findViewById(R.id.editTextSurname)
+        emailEditText = findViewById(R.id.editTextEmail)
+        passwordEditText = findViewById(R.id.editTextPassword)
+        confirmPasswordEditText = findViewById(R.id.editTextConfirmPassword)
         progressBar = findViewById(R.id.progressBar)
         mAuth = FirebaseAuth.getInstance()
-        editTextEmail = findViewById(R.id.email)
-        editTextPassword = findViewById(R.id.password)
-        buttonReg = findViewById(R.id.btn_register)
-        textView = findViewById(R.id.loginNow)
-        textView.setOnClickListener {
+        registerButton = findViewById(R.id.buttonRegister)
+        loginTextView = findViewById(R.id.textViewLogin)
+
+        // Set login text click listener
+        loginTextView.setOnClickListener {
             val intent = Intent(applicationContext, Login::class.java)
             startActivity(intent)
             finish()
         }
-
 
         // Set window insets listener
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -67,65 +69,61 @@ class Register : AppCompatActivity() {
         }
 
         // Set button click listener
-        buttonReg.setOnClickListener {
+        registerButton.setOnClickListener {
             progressBar.visibility = View.VISIBLE
-            val email = editTextEmail.text.toString()
-            val password = editTextPassword.text.toString()
-            val firstName = editTextFirstName.text.toString()
-            val lastName = editTextLastName.text.toString()
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+            val confirmPassword = confirmPasswordEditText.text.toString()
+            val name = nameEditText.text.toString()
+            val surname = surnameEditText.text.toString()
 
-            if (TextUtils.isEmpty(firstName)) {
-                Toast.makeText(this, "Enter first name", Toast.LENGTH_SHORT).show()
+            if (TextUtils.isEmpty(name)) {
+                Toast.makeText(this, "Enter your name", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
-            if (TextUtils.isEmpty(lastName)) {
-                Toast.makeText(this, "Enter last name", Toast.LENGTH_SHORT).show()
+            if (TextUtils.isEmpty(surname)) {
+                Toast.makeText(this, "Enter your surname", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
-
 
             if (TextUtils.isEmpty(email)) {
-                Toast.makeText(this, "Enter email", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Enter your email", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
             if (TextUtils.isEmpty(password)) {
-                Toast.makeText(this, "Enter password", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Enter your password", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
-            if (TextUtils.isEmpty(firstName)) {
-                Toast.makeText(this, "Enter first name", Toast.LENGTH_SHORT).show()
+            if (TextUtils.isEmpty(confirmPassword)) {
+                Toast.makeText(this, "Confirm your password", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
-            if (TextUtils.isEmpty(lastName)) {
-                Toast.makeText(this, "Enter last name", Toast.LENGTH_SHORT).show()
+            if (password != confirmPassword) {
+                Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show()
+                progressBar.visibility = View.GONE
                 return@setOnClickListener
             }
 
-            //registration logic
+            // Registration logic
             mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     progressBar.visibility = View.GONE
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
-                        mAuth.currentUser
-
-                        Toast.makeText(
-                            baseContext,
-                            "Account Created.",
-                            Toast.LENGTH_SHORT,
-                        ).show()
+                        Toast.makeText(baseContext, "Account Created.", Toast.LENGTH_SHORT).show()
+                        // Optionally navigate to the main activity or login screen
                     } else {
                         // If sign in fails, display a message to the user
-                        Toast.makeText(
-                            baseContext,
-                            "Authentication failed.",
-                            Toast.LENGTH_SHORT,
-                        ).show()
-
+                        Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
                 }
         }

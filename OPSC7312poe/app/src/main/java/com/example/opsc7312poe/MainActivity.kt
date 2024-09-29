@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
@@ -46,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         // Navigation buttons
         val navProfile: ImageButton = findViewById(R.id.nav_profile)
         val navJournal: ImageButton = findViewById(R.id.nav_journal)
+        val navHome: ImageButton = findViewById(R.id.nav_home)
+        val navMood: ImageButton = findViewById(R.id.nav_mood)
 
         // Get the current user
         user = auth.currentUser
@@ -97,6 +100,18 @@ class MainActivity : AppCompatActivity() {
 
             navJournal.setOnClickListener {
                 val intent = Intent(this, ComposeActivity::class.java)
+                startActivity(intent)
+            }
+
+            // Home button
+            navHome.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+
+            // Mood button
+            navMood.setOnClickListener {
+                val intent = Intent(this, MoodTrack::class.java)
                 startActivity(intent)
             }
         }

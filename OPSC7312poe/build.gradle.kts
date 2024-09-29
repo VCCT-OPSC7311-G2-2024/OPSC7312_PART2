@@ -14,6 +14,6 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
 }
 
-allprojects {
+allprojects{
 
 }

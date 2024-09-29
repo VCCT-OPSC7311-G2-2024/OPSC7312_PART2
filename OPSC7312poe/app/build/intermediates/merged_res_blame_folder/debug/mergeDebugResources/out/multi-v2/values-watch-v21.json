@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-45:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-34:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Program Files\\Android\\Android Studio\\jbr\\caches\\transforms-3\\0d697ac1359c8e51ee68d2242e14309a\\transformed\\appcompat-1.7.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Gamer\\.gradle\\caches\\transforms-3\\4dc12f82e7dbc9b7fab19c47b1e18af1\\transformed\\appcompat-1.7.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

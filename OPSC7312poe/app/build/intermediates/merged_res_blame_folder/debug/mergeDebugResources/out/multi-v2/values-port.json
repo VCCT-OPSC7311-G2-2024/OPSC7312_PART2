@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-37:/values-port/values-port.xml",
+            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-34:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\de3273f949e29ea04e135b21b007eef2\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Gamer\\.gradle\\caches\\transforms-3\\4dc12f82e7dbc9b7fab19c47b1e18af1\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

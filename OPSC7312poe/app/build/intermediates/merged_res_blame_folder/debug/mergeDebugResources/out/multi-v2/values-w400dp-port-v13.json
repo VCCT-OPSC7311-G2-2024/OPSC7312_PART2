@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-45:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
+            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-34:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Program Files\\Android\\Android Studio\\jbr\\caches\\transforms-3\\7676401a5c3ae05febb15d9b4b16454b\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+                    "source": "C:\\Users\\Gamer\\.gradle\\caches\\transforms-3\\58af7ce24071059ffa50f3ceae106afa\\transformed\\material-1.12.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
