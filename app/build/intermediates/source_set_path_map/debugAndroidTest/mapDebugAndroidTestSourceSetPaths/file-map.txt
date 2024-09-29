@@ -1,0 +1,6 @@
+com.example.opsc7312poe.test.app-annotation-experimental-1.4.1-0 C:\Users\Cameron\.gradle\caches\transforms-3\243160d4046265ccee1e4cf6948e4dc5\transformed\annotation-experimental-1.4.1\res
+com.example.opsc7312poe.test.app-core-1.5.0-1 C:\Users\Cameron\.gradle\caches\transforms-3\74b19217727b6a4ed9e0ee87ba89b789\transformed\core-1.5.0\res
+com.example.opsc7312poe.test.app-androidTest-2 C:\Users\Cameron\Downloads\OPSC7312poe\app\build\generated\res\resValues\androidTest\debug
+com.example.opsc7312poe.test.app-mergeDebugAndroidTestResources-3 C:\Users\Cameron\Downloads\OPSC7312poe\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.opsc7312poe.test.app-mergeDebugAndroidTestResources-4 C:\Users\Cameron\Downloads\OPSC7312poe\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.opsc7312poe.test.app-debugAndroidTest-5 C:\Users\Cameron\Downloads\OPSC7312poe\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

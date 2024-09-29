@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.opsc7312poe.app-mergeDebugResources-45:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cameron\\.gradle\\caches\\transforms-3\\2237d9c84d1145fa3b7763e0964d3180\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_good.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/good.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_activity_register.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_activity_main.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio1.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio1.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_audio_item.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/audio_item.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio12.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio12.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/raw_audio1.mp3.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/raw/audio1.mp3"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_activity_mood_track.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_mood_track.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio9.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio9.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_play.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_play.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_awful.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/awful.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio4.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio4.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/xml_backup_rules.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio11.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio11.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/menu_bottom_navigation_menu.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/menu/bottom_navigation_menu.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio7.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio7.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/raw_audio2.mp3.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/raw/audio2.mp3"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio15.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio15.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_audio.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/audio.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_meh.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/meh.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_activity_audio.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_audio.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/raw_audio3.mp3.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/raw/audio3.mp3"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio10.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio10.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio3.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio3.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_bad.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/bad.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/layout_activity_login.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio6.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio6.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_home.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/home.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio14.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio14.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_journal.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/journal.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio2.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio2.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_rad.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/rad.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_pause.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_pause.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_profile.PNG.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/profile.PNG"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio8.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio8.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio13.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio13.png"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-debug-47:/drawable_ic_audio5.png.flat",
+        "source": "com.example.opsc7312poe.app-main-49:/drawable/ic_audio5.png"
+    }
+]

@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Register"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/register"
+        android:layout_gravity="center"
+        android:textSize="28sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:id="@+id/first_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:id="@+id/last_name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:id="@+id/email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:id="@+id/password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:text="@string/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/loginNow"
+        android:text="@string/click_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

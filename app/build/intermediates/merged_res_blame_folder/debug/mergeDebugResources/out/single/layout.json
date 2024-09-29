@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/activity_main.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/activity_audio.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_audio.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/activity_mood_track.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_mood_track.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/activity_register.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/activity_login.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.opsc7312poe.app-mergeDebugResources-46:/layout/audio_item.xml",
+        "source": "com.example.opsc7312poe.app-main-49:/layout/audio_item.xml"
+    }
+]
