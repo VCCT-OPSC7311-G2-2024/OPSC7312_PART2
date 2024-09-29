@@ -15,6 +15,11 @@
           <theme>@style/Theme.Material3.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_mood_track.xml">
+        <config>
+          <theme>@style/Theme.Material3.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_register.xml">
         <config>
           <theme>@style/Theme.Material3.Light.NoActionBar</theme>
@@ -26,78 +31,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="683464cd-292f-496d-ab9b-7bda635a289f" name="Changes" comment="unversioned files commit and mood selection page">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/awful.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/bad.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/good.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/meh.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/rad.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2024_09_22_22_50__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/sources/org/gradle/accessors/dm/LibrariesForLibs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/ac0d547bdf422135239c329bd4e6658ec5ffa1c0/sources/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/8.4/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/processDebugResources/R.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/tmp/kotlin-classes/debug/com/example/opsc7312poe/Login.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/tmp/kotlin-classes/debug/com/example/opsc7312poe/MainActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/build/tmp/kotlin-classes/debug/com/example/opsc7312poe/Register.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/drawable/awful.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/drawable/bad.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/drawable/good.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/drawable/meh.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/drawable/rad.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/java/com/example/opsc7312poe/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/java/com/example/opsc7312poe/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/java/com/example/opsc7312poe/Register.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/java/com/example/opsc7312poe/Register.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/layout/activity_register.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPSC7312poe/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/OPSC7312poe/settings.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="683464cd-292f-496d-ab9b-7bda635a289f" name="Changes" comment="unversioned files commit and mood selection page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
