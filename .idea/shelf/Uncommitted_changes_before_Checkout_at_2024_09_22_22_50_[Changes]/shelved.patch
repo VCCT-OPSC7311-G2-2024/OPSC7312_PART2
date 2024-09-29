@@ -1,0 +1,82 @@
+Index: OPSC7312poe/app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    alias(libs.plugins.androidApplication)\r\n    alias(libs.plugins.jetbrainsKotlinAndroid)\r\n    id(\"com.google.gms.google-services\")\r\n}\r\n\r\nandroid {\r\n    namespace = \"com.example.opsc7312poe\"\r\n    compileSdk = 34\r\n\r\n    defaultConfig {\r\n        applicationId = \"com.example.opsc7312poe\"\r\n        minSdk = 27\r\n        targetSdk = 34\r\n        versionCode = 1\r\n        versionName = \"1.0\"\r\n\r\n        testInstrumentationRunner = \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            isMinifyEnabled = false\r\n            proguardFiles(\r\n                getDefaultProguardFile(\"proguard-android-optimize.txt\"),\r\n                \"proguard-rules.pro\"\r\n            )\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility = JavaVersion.VERSION_1_8\r\n        targetCompatibility = JavaVersion.VERSION_1_8\r\n    }\r\n    kotlinOptions {\r\n        jvmTarget = \"1.8\"\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation(libs.androidx.core.ktx)\r\n    implementation(libs.androidx.appcompat)\r\n    implementation(libs.material)\r\n    implementation(libs.androidx.activity)\r\n    implementation(libs.androidx.constraintlayout)\r\n    implementation(\"com.google.firebase:firebase-auth:23.0.0\")\r\n    implementation(\"androidx.appcompat:appcompat:1.7.0\")\r\n    implementation(\"com.google.android.material:material:1.12.0\")\r\n    implementation(\"androidx.activity:activity:1.8.0\")\r\n    implementation(\"androidx.constraintlayout:constraintlayout:2.1.4\")\r\n    testImplementation(libs.junit)\r\n    androidTestImplementation(libs.androidx.junit)\r\n    androidTestImplementation(libs.androidx.espresso.core)\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/OPSC7312poe/app/build.gradle.kts b/OPSC7312poe/app/build.gradle.kts
+--- a/OPSC7312poe/app/build.gradle.kts	(revision 32f9114378fd41cadb487c72287d6f30f8b7e3c8)
++++ b/OPSC7312poe/app/build.gradle.kts	(date 1727037437532)
+@@ -51,4 +51,5 @@
+     testImplementation(libs.junit)
+     androidTestImplementation(libs.androidx.junit)
+     androidTestImplementation(libs.androidx.espresso.core)
++    implementation(kotlin("script-runtime"))
+ }
+\ No newline at end of file
+Index: OPSC7312poe/app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n\r\n    <uses-permission android:name=\"android.permission.INTERNET\"/>\r\n    <application\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.Material3.Light\"\r\n        tools:targetApi=\"31\">\r\n        <activity\r\n            android:name=\".Register\"\r\n            android:theme=\"@style/Theme.Material3.Light.NoActionBar\"\r\n            android:exported=\"false\" />\r\n        <activity\r\n            android:name=\".Login\"\r\n            android:theme=\"@style/Theme.Material3.Light.NoActionBar\"\r\n            android:exported=\"true\">\r\n        </activity>\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\">\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/OPSC7312poe/app/src/main/AndroidManifest.xml b/OPSC7312poe/app/src/main/AndroidManifest.xml
+--- a/OPSC7312poe/app/src/main/AndroidManifest.xml	(revision 32f9114378fd41cadb487c72287d6f30f8b7e3c8)
++++ b/OPSC7312poe/app/src/main/AndroidManifest.xml	(date 1727030586901)
+@@ -2,7 +2,8 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools">
+ 
+-    <uses-permission android:name="android.permission.INTERNET"/>
++    <uses-permission android:name="android.permission.INTERNET" />
++
+     <application
+         android:allowBackup="true"
+         android:dataExtractionRules="@xml/data_extraction_rules"
+@@ -14,14 +15,16 @@
+         android:theme="@style/Theme.Material3.Light"
+         tools:targetApi="31">
+         <activity
++            android:name=".Mood"
++            android:exported="false" />
++        <activity
+             android:name=".Register"
+-            android:theme="@style/Theme.Material3.Light.NoActionBar"
+-            android:exported="false" />
++            android:exported="false"
++            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+         <activity
+             android:name=".Login"
+-            android:theme="@style/Theme.Material3.Light.NoActionBar"
+-            android:exported="true">
+-        </activity>
++            android:exported="true"
++            android:theme="@style/Theme.Material3.Light.NoActionBar"></activity>
+         <activity
+             android:name=".MainActivity"
+             android:exported="true">
+Index: OPSC7312poe/app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">OPSC7312 poe</string>\r\n    <string name=\"login\">Login</string>\r\n    <string name=\"email\">email</string>\r\n    <string name=\"password\">password</string>\r\n    <string name=\"register\">Register</string>\r\n    <string name=\"click_to_login\">click_to_login</string>\r\n    <string name=\"click_to_register\" />\r\n    <string name=\"logout\" />\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/OPSC7312poe/app/src/main/res/values/strings.xml b/OPSC7312poe/app/src/main/res/values/strings.xml
+--- a/OPSC7312poe/app/src/main/res/values/strings.xml	(revision 32f9114378fd41cadb487c72287d6f30f8b7e3c8)
++++ b/OPSC7312poe/app/src/main/res/values/strings.xml	(date 1727038085064)
+@@ -7,4 +7,11 @@
+     <string name="click_to_login">click_to_login</string>
+     <string name="click_to_register" />
+     <string name="logout" />
++    <string name="MoodPromps">How are you feeling today?</string>
++    <string name="Rad">Rad</string>
++    <string name="rad">Rad</string>
++    <string name="good">Good</string>
++    <string name="meh">Meh</string>
++    <string name="bad">Bad</string>
++    <string name="awful">Awful</string>
+ </resources>
+\ No newline at end of file

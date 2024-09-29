@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,17 +15,50 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.OPSC7312Poe"
+        android:theme="@style/Theme.Material3.Light"
         tools:targetApi="31">
+
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- User Authentication Activities -->
+        <activity
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+
+        <!-- Mood Tracking Activity -->
+        <activity
+            android:name=".MoodTrack"
+            android:exported="false" />
+
+        <!-- New Activities -->
+        <activity
+            android:name=".ComposeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
+
+        <activity
+            android:name=".AccountActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Material3.Light" />
+
     </application>
 
 </manifest>
