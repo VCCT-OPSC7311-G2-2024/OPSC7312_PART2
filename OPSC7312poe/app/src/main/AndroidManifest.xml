@@ -59,6 +59,12 @@
             android:exported="true"
             android:theme="@style/Theme.Material3.Light" />
 
+        <activity
+            android:name=".AudioActivity"
+            android:exported="false"
+        android:theme="@style/Theme.Material3.Light" />
+
     </application>
 
 </manifest>
+
