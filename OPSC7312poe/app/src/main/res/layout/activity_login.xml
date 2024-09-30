@@ -55,15 +55,6 @@
         android:text="Login"
         android:backgroundTint="@color/green" />
 
-    <TextView
-        android:id="@+id/loginSSO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login with SSO"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:textColor="@android:color/holo_blue_dark" />
 
     <TextView
         android:id="@+id/registerNow"
@@ -75,15 +66,6 @@
         android:clickable="true"
         android:textColor="@android:color/holo_blue_dark" />
 
-    <TextView
-        android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot your password?"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:textColor="@android:color/holo_blue_dark" />
 
     <ProgressBar
         android:id="@+id/progressBar"
