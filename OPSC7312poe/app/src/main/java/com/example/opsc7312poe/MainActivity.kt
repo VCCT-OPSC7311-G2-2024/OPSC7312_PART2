@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         // Navigation buttons
         val navProfile: ImageButton = findViewById(R.id.nav_profile)
         val navJournal: ImageButton = findViewById(R.id.nav_journal)
+        val navAudio: ImageButton = findViewById(R.id.nav_audio)
         val navHome: ImageButton = findViewById(R.id.nav_home)
         val navMood: ImageButton = findViewById(R.id.nav_mood)
 
@@ -100,6 +101,11 @@ class MainActivity : AppCompatActivity() {
 
             navJournal.setOnClickListener {
                 val intent = Intent(this, ComposeActivity::class.java)
+                startActivity(intent)
+            }
+
+            navAudio.setOnClickListener {
+                val intent = Intent(this, AudioActivity::class.java)
                 startActivity(intent)
             }
 
