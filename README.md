@@ -1,3 +1,11 @@
+Group Members:
+
+Cameron Daniel Colley - ST10037966 
+Dylan Lee Padayachee - ST10177615 
+Kurt Joshau Siebritz - ST10208082 
+
+
+
 mindXcape
 mindXcape is an Android application designed for mood tracking and journaling. Users can log their moods, visualize mood trends, and manage their profiles.
 
